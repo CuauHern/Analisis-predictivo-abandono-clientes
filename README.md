@@ -1,52 +1,35 @@
 <h1 align="center">Análisis predictivo de abandono de clientes en una Compañía Telefónica</h1>
 
+# Descripción de proyecto
+
+Al operador de telecomunicaciones Interconnect le gustaría poder pronosticar su tasa de cancelación de clientes. Si se descubre que un usuario o usuaria planea irse, se le ofrecerán códigos promocionales y opciones de planes especiales. El equipo de marketing de Interconnect ha recopilado algunos de los datos personales de sus clientes, incluyendo información sobre sus planes y contratos.
+
+## Servicios de Interconnect
+
+Interconnect proporciona principalmente dos tipos de servicios:
+
+1. Comunicación por teléfono fijo. El teléfono se puede conectar a varias líneas de manera simultánea.
+2. Internet. La red se puede configurar a través de una línea telefónica (DSL, *línea de abonado digital*) o a través de un cable de fibra óptica.
+
+Algunos otros servicios que ofrece la empresa incluyen:
+
+- Seguridad en Internet: software antivirus (*ProtecciónDeDispositivo*) y un bloqueador de sitios web maliciosos (*SeguridadEnLínea*).
+- Una línea de soporte técnico (*SoporteTécnico*).
+- Almacenamiento de archivos en la nube y backup de datos (*BackupOnline*).
+- Streaming de TV (*StreamingTV*) y directorio de películas (*StreamingPelículas*)
+
+La clientela puede elegir entre un pago mensual o firmar un contrato de 1 o 2 años. Puede utilizar varios métodos de pago y recibir una factura electrónica después de una transacción.
+
 Realicé el proceso desde la planeación, desarrollo y conclusión del por que clientes dejan una compañía telefónica. A continuación se detalla el proceso realizado.
 
 Para cualquier industria es importante conocer los aspectos que pueden resultar en el abandono de clientes, identificar los factores quelo cual permite crear y diseñar estrategias preventivas para evitar la deserción y ya sea retener o atraer nuevos prospectos
 
+### Descripción de los datos
 
-En todas las industrias, la retención de clientes es fundamental para garantizar ingresos sostenibles y reducir los costos asociados con la adquisición de nuevos clientes. Identificar los factores clave que influyen en la retención y cancelación permite a la empresa telefónica conocer los riesgos de abandono, lo cual permite diseñar estrategias de fidelización efectivas y personalizar las experiencias para cada cliente.
+Los datos consisten en archivos obtenidos de diferentes fuentes:
 
-Herramientas y tipo de proyecto:
+- `contract.csv` — información del contrato;
+- `personal.csv` — datos personales del cliente;
+- `internet.csv` — información sobre los servicios de Internet;
+- `phone.csv` — información sobre los servicios telefónicos.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/jupyter-3776AB?style=flat-square&logo=jupyter&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-3776AB?style=flat-square&logo=Pandas&logoColor=white)
-![Numpy](https://img.shields.io/badge/Numpy-3776AB?style=flat-square&logo=Numpy&logoColor=white)
-![SKlearn](https://img.shields.io/badge/ScikitLearn-3776AB?style=flat-square&logo=ScikitLearn&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat-square&logo=Seaborn&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-3776AB?style=flat-square&logo=Matplotlib&logoColor=white)
-
-![EDA](https://img.shields.io/badge/An%C3%A1lisis%20Exploratorio%20de%20Datos-3776AB)
-![Limpieza](https://img.shields.io/badge/Limpieza%20de%20Datos-3776AB)
-![Transfomacion](https://img.shields.io/badge/Transformaci%C3%B3n%20de%20Datos-3776AB)
-![modelado](https://img.shields.io/badge/Modelos%20de%20Predicci%C3%B3n-3776AB)
-
-
-Preguntas clave:
-
-1. ¿Qué tipo de servicio tiene mayor abandono?
-2. ¿Qué tipo de personas contratan ambos servicios, y cuales contratan?
-3. ¿Qué tipo de contrato tiene mayor abandono?
-4. ¿El total de cargos influye en el abandono?
-
-
-# Metodologia:
-
-* Preprocesamiento de datos: Se limpiaron y estandarizaron los datos, eliminando inconsistencias y verificando la ausencia de duplicados y valores faltantes.
-* Explorartory Data Analysis (EDA): Se analizaron características de genero, tipo de contrato, y servicios contratados, identificando patrones en clientes que permanecen y los que cancelan.
-* Modelado predictivo: Se entrenaron modelos de regresión logística, bosque aleatorio y XGB para predecir la cancelación de clientes con un precisión del 81%, 79% y 80% respectivamente.
-
-# Conclusiones y recomendaciones
-
-## Factores críticos de abandono:
-
-Existen diversos factores en el abandono de clientes de la compañia, entre los mas comunes podemos enlistar los sigueiontes:
-* Servicio de fibra optica
-* contrato de pago mes a mes
-* Metodo de pago por cheque
-
-# Estrategias recomendadas:
-
-* Campañas informativas: Ofrecer información al cambio de tecnologías.
-* Campañas personalizadas: Utilizar el modelo predictivo para identificar clientes en riesgo y ofrecer promociones específicas
